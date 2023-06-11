@@ -10,6 +10,7 @@ const firebaseConfig = {
   appId: import.meta.env.FIREBASE_APPID
 };
 
+console.log(import.meta.env.FIREBASE_AUTHDOMAIN)
 console.log(firebaseConfig)
 // Initialize Firebase
 if (!firebase.apps?.length) {
