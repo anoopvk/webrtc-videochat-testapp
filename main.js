@@ -1,7 +1,6 @@
 
-import firebase from "https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js";
-import 'https://www.gstatic.com/firebasejs/8.2.10/firebase-firestore.js'
-
+import firebase from "firebase/app";
+import 'firebase/firestore'
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_APIKEY,
   authDomain: process.env.FIREBASE_AUTHDOMAIN,
@@ -10,9 +9,6 @@ const firebaseConfig = {
   messagingSenderId: process.env.FIREBASE_MESSAGINGSENDERID,
   appId: process.env.FIREBASE_APPID
 };
-
-
-
 
 // Initialize Firebase
 if (!firebase.apps?.length) {
